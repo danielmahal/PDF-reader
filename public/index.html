@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Reader</title>
+</head>
+<body>
+    <div class="content"></div>
+
+    <script src="/vendor/jquery-2.0.3.js"></script>
+    <script>
+        $(function() {
+            $.ajax('pdf/sample.pdf').done(function(data) {
+                $('.content').text(data);
+            })
+        });
+    </script>
+</body>
+</html>
